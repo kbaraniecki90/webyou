@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  .underConstruction{
+    /* width: 100%; */
+    position: absolute;
+    top:75%;
+    left: 50%;
+    /* right: 50%; */
+  }
+
+  h1{
+    font-size: 5rem !important;
+    text-transform: uppercase;
+    color: #ffff;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+
+  }
