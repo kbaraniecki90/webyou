@@ -8,7 +8,7 @@ module.exports = {
 		path: path.resolve(__dirname, 'dist/js/'),
 		filename: 'main.js'
 	},
-	devtool: "source-map",
+	devtool: 'source-map',
    	module: {
 		rules: [
             {
@@ -22,9 +22,9 @@ module.exports = {
 		    	test  : /\.scss$/,
 		    	loader:  ExtractTextPlugin.extract({
 		    		fallback:"style-loader",
-					use:"css-loader!sass-loader",
-		    	})
-	   		},
+					use:"css-loader?sourceMap!sass-loader?sourceMap",
+		    	}),
+			},
 		],
 	},
    	plugins: [
