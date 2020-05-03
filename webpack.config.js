@@ -2,10 +2,12 @@ const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
+const __srcFilesProject = './wp-content/themes/webyou';
+
 module.exports = {
-   entry: './src/js/main.js',
+   entry: __srcFilesProject + '/src/js/main.js',
 	output: {
-		path: path.resolve(__dirname, 'dist/js/'),
+		path: path.resolve(__dirname, __srcFilesProject + '/dist/js/'),
 		filename: 'main.js'
 	},
 	devtool: 'source-map',
@@ -32,7 +34,7 @@ module.exports = {
        new BrowserSyncPlugin({
 	    	host: 'localhost',
 	    	port: 3000,
-	    	files: ['./*.php'],
+	    	files: [__srcFilesProject + '**/*.php'],
             proxy: 'localhost/webyou',
             injectChanges: false,
 	    })
