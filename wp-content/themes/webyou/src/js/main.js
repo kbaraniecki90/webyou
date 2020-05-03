@@ -1,1 +1,3 @@
-console.log('dupa123101123 klop')
+import '../scss/main.scss'
+
+console.log('test')

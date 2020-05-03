@@ -10,4 +10,10 @@
 
 ?>
 
-hello 1234abcacdazzz
+<?php get_header(); ?>
+
+<div>
+	<h1>TEST MAIN</h1>
+</div>
+
+<?php get_footer(); ?>
