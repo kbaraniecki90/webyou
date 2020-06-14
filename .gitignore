@@ -11,6 +11,10 @@ wp-content/cache/
 wp-content/upgrade/
 wp-content/uploads/
 wp-content/wp-cache-config.php
+wp-content/updraft/
 
 node_modules
 package-lock.json
+
+
+
